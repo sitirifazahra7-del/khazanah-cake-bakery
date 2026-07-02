@@ -204,34 +204,21 @@
                 </div>
             </div>
 
-            <!-- Map / Contact Form -->
-            <div class="lg:col-span-2 bg-[#141414] border border-[#d4af37]/15 p-8">
-                <h3 class="text-2xl font-bold text-[#d4af37] mb-2" style="font-family:'Cormorant Garamond',serif;">Kirim Pesan</h3>
-                <p class="text-sm text-[#f7e080]/50 mb-6">Punya pertanyaan? Kami siap membantu Anda.</p>
-                <form action="#" method="POST" class="space-y-4">
-                    @csrf
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label class="block text-xs tracking-widest uppercase text-[#d4af37]/70 mb-2">Nama</label>
-                            <input type="text" placeholder="Nama Anda" class="input-gold">
-                        </div>
-                        <div>
-                            <label class="block text-xs tracking-widest uppercase text-[#d4af37]/70 mb-2">Email</label>
-                            <input type="email" placeholder="email@contoh.com" class="input-gold">
-                        </div>
-                    </div>
-                    <div>
-                        <label class="block text-xs tracking-widest uppercase text-[#d4af37]/70 mb-2">Subjek</label>
-                        <input type="text" placeholder="Tentang apa?" class="input-gold">
-                    </div>
-                    <div>
-                        <label class="block text-xs tracking-widest uppercase text-[#d4af37]/70 mb-2">Pesan</label>
-                        <textarea rows="5" placeholder="Tulis pesan Anda di sini..." class="input-gold resize-none"></textarea>
-                    </div>
-                    <button type="submit" class="btn-gold w-full py-3 text-xs mt-2">
-                        <span>✦ Kirim Pesan</span>
-                    </button>
-                </form>
+            <!-- Embedded Google Map -->
+            <div class="lg:col-span-2 bg-[#141414] border border-[#d4af37]/15 p-2 rounded-xl overflow-hidden relative group min-h-[400px]">
+                <!-- Elegant overlay to match the premium dark/gold theme -->
+                <div class="absolute inset-0 bg-[#d4af37]/10 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-700"></div>
+                
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.2882895470533!2d100.3541295!3d-0.9008272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2fd4b8ad28fbf6ab%3A0xc4ab5f973c683b58!2sJl.%20Banjarmasin%2C%20Ulak%20Karang%20Sel.%2C%20Kec.%20Padang%20Utara%2C%20Kota%20Padang%2C%20Sumatera%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0; position: absolute; inset: 0;"
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"
+                    class="filter grayscale-[50%] sepia-[40%] opacity-80 group-hover:filter-none group-hover:opacity-100 transition-all duration-700">
+                </iframe>
             </div>
         </div>
     </div>
