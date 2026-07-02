@@ -50,7 +50,7 @@
             <div class="flex flex-1 justify-end items-center gap-4">
                 <div id="navbar-auth-desktop" class="hidden md:flex items-center gap-4">
                     @guest
-
+                        <!-- Tombol Masuk dan Daftar sudah dihapus dari sini -->
                     @else
                         @if(Auth::user()->isAdmin())
                             <a href="{{ route('admin.dashboard') }}" class="btn-outline-gold px-4 py-2 text-[11px]">Admin Panel</a>
@@ -87,7 +87,7 @@
                 <div id="navbar-auth-mobile" class="flex flex-col gap-2">
                     <hr class="border-[#d4af37]/20 my-2">
                     @guest
-
+                        <!-- Tombol Masuk dan Daftar versi mobile juga sudah dihapus -->
                     @else
                         @if(Auth::user()->isAdmin())
                             <a href="{{ route('admin.dashboard') }}" class="btn-outline-gold text-xs px-5 py-3 w-full text-center">Admin Panel</a>
