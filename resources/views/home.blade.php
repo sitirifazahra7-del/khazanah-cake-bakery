@@ -127,41 +127,43 @@
             <p class="section-subtitle mb-2 md:mb-3">✦ Menu Kami ✦</p>
             <h2 class="section-title mb-3 md:mb-4">Koleksi Premium</h2>
             <div class="gold-divider"></div>
-            <p class="text-[#f7e080]/60 mt-4 max-w-xl mx-auto text-xs md:text-base px-4">Setiap produk dibuat segar setiap hari dengan bahan-bahan terpilih. Pilih favorit Anda dan pesan langsung.</p>
+            <p class="text-[#f7e080]/60 mt-4 max-w-xl mx-auto text-xs md:text-base px-4 md:px-0">Setiap produk dibuat segar setiap hari dengan bahan-bahan terpilih. Pilih favorit Anda dan pesan langsung.</p>
         </div>
 
-        <!-- Products Grid (2 columns on mobile, 3 on tablet/desktop) -->
-        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-6 lg:gap-8">
+        <!-- Products Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             @foreach($products as $product)
             <div class="card-product group" id="product-{{ $product->id }}">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square rounded-t-xl lg:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
                     <img src="{{ Str::startsWith($product->image, 'http') ? $product->image : asset('image/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
-                    <div class="absolute top-2 left-2 lg:top-4 lg:left-4">
-                        <span class="bg-[#d4af37]/90 text-[#0a0a0a] text-[8px] lg:text-[10px] font-bold tracking-widest uppercase px-2 lg:px-4 py-1 lg:py-1.5 rounded-full shadow-lg">
+                    <div class="absolute top-2 left-2 md:top-4 md:left-4">
+                        <span class="bg-[#d4af37]/90 text-[#0a0a0a] text-[8px] md:text-[10px] font-bold tracking-widest uppercase px-2 md:px-4 py-1 md:py-1.5 rounded-full shadow-lg">
                             {{ ucfirst($product->category) }}
                         </span>
                     </div>
                     <!-- Price Badge -->
-                    <div class="absolute bottom-2 right-2 lg:bottom-4 lg:right-4">
-                        <span class="bg-[#0a0a0a]/80 border border-[#d4af37]/40 text-[#d4af37] text-[11px] lg:text-sm font-bold px-2 lg:px-4 py-1 lg:py-1.5 rounded-full backdrop-blur-sm shadow-lg" style="font-family:'Cormorant Garamond',serif;">
+                    <div class="absolute bottom-2 right-2 md:bottom-4 md:right-4">
+                        <span class="bg-[#0a0a0a]/80 border border-[#d4af37]/40 text-[#d4af37] text-[11px] md:text-sm font-bold px-2 md:px-4 py-1 md:py-1.5 rounded-full backdrop-blur-sm shadow-lg" style="font-family:'Cormorant Garamond',serif;">
                             {{ $product->formatted_price }}
                         </span>
                     </div>
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 lg:p-6 relative z-10">
-                    <h3 class="text-[13px] lg:text-xl font-bold text-[#d4af37] mb-1 lg:mb-2 line-clamp-1 lg:line-clamp-2" style="font-family:'Cormorant Garamond',serif; line-height: 1.3;">{{ $product->name }}</h3>
-                    <p class="text-[10px] lg:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 lg:mb-6 line-clamp-2">{{ $product->description }}</p>
-                    <button
-                        onclick="openOrderModal({{ $product->id }}, '{{ addslashes($product->name) }}', {{ $product->price }}, '{{ $product->formatted_price }}')"
-                        class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-0">
-                        <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                        <span class="lg:hidden">Beli</span>
-                    </button>
+                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                    <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">{{ $product->name }}</h3>
+                    <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">{{ $product->description }}</p>
+                    <div class="mt-auto md:mt-0">
+                        <button
+                            onclick="openOrderModal({{ $product->id }}, '{{ addslashes($product->name) }}', {{ $product->price }}, '{{ $product->formatted_price }}')"
+                            class="btn-gold w-full !py-2 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8">
+                            <span class="hidden md:inline">✦ Pesan Sekarang</span>
+                            <span class="md:hidden">Beli</span>
+                        </button>
+                    </div>
                 </div>
             </div>
             @endforeach
