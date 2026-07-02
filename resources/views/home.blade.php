@@ -133,9 +133,9 @@
         <!-- Products Grid -->
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
             @foreach($products as $product)
-            <div class="card-product group" id="product-{{ $product->id }}">
+            <div class="card-product group flex flex-col h-full" id="product-{{ $product->id }}">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="{{ Str::startsWith($product->image, 'http') ? $product->image : asset('image/' . $product->image) }}" alt="{{ $product->name }}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -153,15 +153,14 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">{{ $product->name }}</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">{{ $product->description }}</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal({{ $product->id }}, '{{ addslashes($product->name) }}', {{ $product->price }}, '{{ $product->formatted_price }}')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>

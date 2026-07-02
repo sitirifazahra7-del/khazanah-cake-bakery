@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,700;1,500&display=swap" rel="stylesheet">
 
-    <link rel="preload" as="style" href="/build/assets/app-Dleb8kZb.css" /><link rel="modulepreload" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-Dleb8kZb.css" /><script type="module" src="/build/assets/app-BvRk9kiK.js"></script>    </head>
+    <link rel="preload" as="style" href="/build/assets/app-BblWbxTr.css" /><link rel="modulepreload" href="/build/assets/app-BvRk9kiK.js" /><link rel="stylesheet" href="/build/assets/app-BblWbxTr.css" /><script type="module" src="/build/assets/app-BvRk9kiK.js"></script>    </head>
 <body class="bg-[#0e0e0e] text-[#f7e080] min-h-screen">
 
     <!-- Navbar -->
@@ -211,9 +211,9 @@
 
         <!-- Products Grid -->
         <div class="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8">
-                        <div class="card-product group" id="product-1">
+                        <div class="card-product group flex flex-col h-full" id="product-1">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/2e/dc/28/2edc28996e537a0cb8d2d07749a3cb65.jpg" alt="Roti Manis" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -231,22 +231,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Roti Manis</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Roti manis lembut dengan rasa klasik.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(1, 'Roti Manis', 2000, 'Rp 2.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-2">
+                        <div class="card-product group flex flex-col h-full" id="product-2">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/1c/79/74/1c7974ea250f92c01b963895cbce5cbe.jpg" alt="Roti Manis (Premium)" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -264,22 +263,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Roti Manis (Premium)</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Roti manis premium dengan bahan berkualitas tinggi.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(2, 'Roti Manis (Premium)', 6000, 'Rp 6.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-3">
+                        <div class="card-product group flex flex-col h-full" id="product-3">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/f6/ec/44/f6ec4412c70321e9846b4d174c64354b.jpg" alt="Bolen" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -297,22 +295,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Bolen</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Bolen lezat dengan tekstur kenyal.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(3, 'Bolen', 3500, 'Rp 3.500')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-4">
+                        <div class="card-product group flex flex-col h-full" id="product-4">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/50/07/52/5007524b1a07c378f021036e02322374.jpg" alt="Pizza Mini" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -330,22 +327,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Pizza Mini</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Mini pizza dengan topping pilihan.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(4, 'Pizza Mini', 3000, 'Rp 3.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-5">
+                        <div class="card-product group flex flex-col h-full" id="product-5">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/2e/f1/52/2ef152715a5d8b0d145989847df36cec.jpg" alt="Bolu Slice" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -363,22 +359,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Bolu Slice</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Bolu slice manis.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(5, 'Bolu Slice', 3000, 'Rp 3.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-6">
+                        <div class="card-product group flex flex-col h-full" id="product-6">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/78/20/53/78205349ef044f80b7ab91360cfa836f.jpg" alt="Pisang Coklat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -396,22 +391,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Pisang Coklat</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Pisang dilapisi coklat.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(6, 'Pisang Coklat', 3000, 'Rp 3.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-7">
+                        <div class="card-product group flex flex-col h-full" id="product-7">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/5e/92/42/5e9242fffece567714e13456fde52e65.jpg" alt="Donat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -429,22 +423,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Donat</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Donat klasik.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(7, 'Donat', 2000, 'Rp 2.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-8">
+                        <div class="card-product group flex flex-col h-full" id="product-8">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/37/64/4d/37644dc6bdffeca6662d7d59974e4ccd.jpg" alt="Bolu Kukus Mekar" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -462,22 +455,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Bolu Kukus Mekar</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Bolu kukus mekar dengan rasa lembut.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(8, 'Bolu Kukus Mekar', 3000, 'Rp 3.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-9">
+                        <div class="card-product group flex flex-col h-full" id="product-9">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/44/bd/1f/44bd1f87218205d3d4e45ceb1a7ffea2.jpg" alt="Donat Red Velvet" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -495,22 +487,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Donat Red Velvet</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Donat red velvet dengan warna khas.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(9, 'Donat Red Velvet', 5000, 'Rp 5.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-10">
+                        <div class="card-product group flex flex-col h-full" id="product-10">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/fc/7a/7c/fc7a7ce99773c893f4d5fa80b8b27e36.jpg" alt="Bolu Pisang" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -528,22 +519,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Bolu Pisang</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Bolu pisang manis.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(10, 'Bolu Pisang', 80000, 'Rp 80.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-11">
+                        <div class="card-product group flex flex-col h-full" id="product-11">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/bb/eb/e5/bbebe5b3427f3202df4b18239b2210f4.jpg" alt="Bolu Jadul" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -561,22 +551,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Bolu Jadul</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Bolu jadul tradisional.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(11, 'Bolu Jadul', 50000, 'Rp 50.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-12">
+                        <div class="card-product group flex flex-col h-full" id="product-12">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/11/c1/5b/11c15b260df2157ffa5479efa05da810.jpg" alt="Brownies" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -594,22 +583,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Brownies</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Brownies coklat kaya rasa.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(12, 'Brownies', 60000, 'Rp 60.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-13">
+                        <div class="card-product group flex flex-col h-full" id="product-13">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/03/d4/b1/03d4b1563efdbd8325785d856f812bb9.jpg" alt="Cake Birthday" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -627,22 +615,21 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Cake Birthday</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Cake ulang tahun spesial.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(13, 'Cake Birthday', 100000, 'Rp 100.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
             </div>
-                        <div class="card-product group" id="product-14">
+                        <div class="card-product group flex flex-col h-full" id="product-14">
                 <!-- Product Image -->
-                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl">
+                <div class="relative overflow-hidden aspect-square md:aspect-[4/3] rounded-t-xl md:rounded-t-2xl flex-shrink-0">
                     <img src="https://i.pinimg.com/736x/42/0b/c0/420bc0aaca5602316eb1fe0257dc3750.jpg" alt="Snack Box" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" loading="lazy">
                     <div class="absolute inset-0 bg-gradient-to-t from-[#0e0e0e] via-transparent to-transparent opacity-80"></div>
                     <!-- Category Badge -->
@@ -660,15 +647,14 @@
                 </div>
 
                 <!-- Product Info -->
-                <div class="p-3 md:p-6 relative z-10 flex flex-col md:block h-full md:h-auto">
+                <div class="p-3 md:p-6 relative z-10 flex flex-col flex-grow">
                     <h3 class="text-[13px] md:text-xl font-bold text-[#d4af37] mb-1 md:mb-2 line-clamp-1 md:line-clamp-none" style="font-family:'Cormorant Garamond',serif;">Snack Box</h3>
                     <p class="text-[10px] md:text-sm text-[#f3e9c6]/60 leading-relaxed mb-3 md:mb-6 line-clamp-2">Berbagai snack dalam satu kotak.</p>
-                    <div class="mt-auto md:mt-0">
+                    <div class="mt-auto">
                         <button
                             onclick="openOrderModal(14, 'Snack Box', 15000, 'Rp 15.000')"
-                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
-                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
-                            <span class="lg:hidden">Beli</span>
+                            class="btn-gold w-full !py-2.5 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8 flex items-center justify-center">
+                            ✦ Pesan
                         </button>
                     </div>
                 </div>
