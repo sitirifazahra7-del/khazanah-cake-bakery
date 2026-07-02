@@ -649,22 +649,22 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Contact Info Cards -->
-            <div class="lg:col-span-1 flex flex-col gap-4">
-                <div class="bg-[#141414] border border-[#d4af37]/15 p-6 hover:border-[#d4af37]/40 transition-colors duration-300">
-                    <div class="w-12 h-12 border border-[#d4af37]/30 flex items-center justify-center mb-4 text-2xl">📍</div>
+            <div class="lg:col-span-1 grid grid-cols-2 lg:grid-cols-1 gap-4">
+                <div class="bg-[#141414] border border-[#d4af37]/15 p-5 hover:border-[#d4af37]/40 transition-colors duration-300">
+                    <div class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center mb-3 text-xl">📍</div>
                     <h4 class="text-[#d4af37] font-semibold mb-2" style="font-family:'Cormorant Garamond',serif;">Lokasi</h4>
-                    <p class="text-sm text-[#f7e080]/60">Jl. Banjarmasin Blok O/15 Asratek,Ulak Karang Selatan,Padang Utara</p>
+                    <p class="text-[11px] sm:text-xs text-[#f7e080]/60 leading-relaxed">Jl. Banjarmasin Blok O/15 Asratek,<br>Ulak Karang Selatan, Padang Utara</p>
                 </div>
-                <div class="bg-[#141414] border border-[#d4af37]/15 p-6 hover:border-[#d4af37]/40 transition-colors duration-300">
-                    <div class="w-12 h-12 border border-[#d4af37]/30 flex items-center justify-center mb-4 text-2xl">📞</div>
-                    <h4 class="text-[#d4af37] font-semibold mb-2" style="font-family:'Cormorant Garamond',serif;">Telepon & WhatsApp</h4>
-                    <p class="text-sm text-[#f7e080]/60">0852-6375-2742</p>
-                    <a href="https://wa.me/6281234567890" target="_blank" class="text-xs text-[#d4af37] hover:underline mt-1 inline-block">Chat via WhatsApp →</a>
+                <div class="bg-[#141414] border border-[#d4af37]/15 p-5 hover:border-[#d4af37]/40 transition-colors duration-300">
+                    <div class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center mb-3 text-xl">📞</div>
+                    <h4 class="text-[#d4af37] font-semibold mb-2" style="font-family:'Cormorant Garamond',serif;">Hubungi</h4>
+                    <p class="text-[11px] sm:text-xs text-[#f7e080]/60">0852-6375-2742</p>
+                    <a href="https://wa.me/6285263752742" target="_blank" class="text-[10px] sm:text-xs text-[#d4af37] hover:underline mt-2 inline-block">Chat via WhatsApp →</a>
                 </div>
-                <div class="bg-[#141414] border border-[#d4af37]/15 p-6 hover:border-[#d4af37]/40 transition-colors duration-300">
-                    <div class="w-12 h-12 border border-[#d4af37]/30 flex items-center justify-center mb-4 text-2xl">🕐</div>
+                <div class="col-span-2 lg:col-span-1 bg-[#141414] border border-[#d4af37]/15 p-5 hover:border-[#d4af37]/40 transition-colors duration-300">
+                    <div class="w-10 h-10 border border-[#d4af37]/30 flex items-center justify-center mb-3 text-xl">🕐</div>
                     <h4 class="text-[#d4af37] font-semibold mb-2" style="font-family:'Cormorant Garamond',serif;">Jam Operasional</h4>
-                    <div class="text-sm text-[#f7e080]/60 space-y-1">
+                    <div class="text-xs text-[#f7e080]/60 space-y-1">
                         <div class="flex justify-between"><span>Senin – Sabtu</span><span class="text-[#d4af37]">07:00 – 18:00</span></div>
                         <div class="flex justify-between"><span>Minggu</span><span class="text-[#d4af37]">Tutup</span></div>
                     </div>
@@ -672,7 +672,7 @@
             </div>
 
             <!-- Embedded Google Map -->
-            <div class="lg:col-span-2 bg-[#141414] border border-[#d4af37]/15 p-2 rounded-xl overflow-hidden relative group min-h-[400px]">
+            <div class="lg:col-span-2 bg-[#141414] border border-[#d4af37]/15 p-2 rounded-xl overflow-hidden relative group h-[300px] lg:h-auto lg:min-h-[400px]">
                 <!-- Elegant overlay to match the premium dark/gold theme -->
                 <div class="absolute inset-0 bg-[#d4af37]/10 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-700"></div>
                 
@@ -684,7 +684,7 @@
                     allowfullscreen="" 
                     loading="lazy" 
                     referrerpolicy="no-referrer-when-downgrade"
-                    class="filter grayscale-[50%] sepia-[40%] opacity-80 group-hover:filter-none group-hover:opacity-100 transition-all duration-700">
+                    class="absolute inset-0 w-full h-full filter grayscale-[50%] sepia-[40%] opacity-80 group-hover:filter-none group-hover:opacity-100 transition-all duration-700">
                 </iframe>
             </div>
         </div>
