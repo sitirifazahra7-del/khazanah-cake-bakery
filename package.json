@@ -3,7 +3,8 @@
     "private": true,
     "type": "module",
     "scripts": {
-        "build": "vite build && php generate_static.php",
+        "build": "vite build",
+        "generate": "vite build && php generate_static.php",
         "dev": "vite"
     },
     "devDependencies": {
