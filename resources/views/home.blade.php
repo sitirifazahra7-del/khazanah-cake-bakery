@@ -81,10 +81,10 @@
                 <p class="section-subtitle mb-3">✦ Kisah Kami ✦</p>
                 <h2 class="section-title mb-4">Seni & Cinta<br><span class="text-[#f7e080]">Dalam Setiap Loyang</span></h2>
                 <div class="gold-divider mb-6" style="margin-left:0;margin-right:auto;"></div>
-                <p class="text-[#f7e080]/70 leading-relaxed mb-6">
+                <p class="text-[#f7e080]/70 leading-relaxed mb-6 text-justify">
                     Khazanah Bakery adalah UMKM yang memproduksi berbagai jenis roti yang sudah ditekuni oleh Owner sendiri yaitu Rezki Viona sejak tahun 2019. Pada awalnya, pekerjaan ini hanya sebuah hobi bagi sang Owner. Jika ada orang yang memesan dan ingin membeli rotinya, barulah ia akan menjualnya.
                 </p>
-                <p class="text-[#f7e080]/70 leading-relaxed mb-8">
+                <p class="text-[#f7e080]/70 leading-relaxed mb-8 text-justify">
                     Pada tahun 2020 ia mulai fokus untuk mengembangkan usaha roti tersebut sehingga menjadi usaha yang maju seperti sekarang. Ia mengaku bahwa di tengah-tengah banyaknya kompetitor lain di bidang usaha roti, Khazanah Bakery berhasil untuk bertahan di pasaran dan selalu menjadi pilihan pelanggan-pelanggannya. Jadi, setiap roti yang dipanggang di Khazanah Bakery bukan hanya soal rasa, tapi juga tentang cinta, ketulusan, dan semangat pantang menyerah dari sang Owner. Karena bagi kami, roti yang enak adalah roti yang dibuat dengan hati.
                 </p>
                 <div class="grid grid-cols-2 gap-4 mb-8">
@@ -160,7 +160,7 @@
                         <button
                             onclick="openOrderModal({{ $product->id }}, '{{ addslashes($product->name) }}', {{ $product->price }}, '{{ $product->formatted_price }}')"
                             class="btn-gold w-full !py-2 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8">
-                            <span>✦ Pesan Sekarang</span>
+                            <span>✦ Beli </span>
                         </button>
                     </div>
                 </div>
@@ -207,7 +207,7 @@
             </div>
 
             <!-- Embedded Google Map -->
-            <div class="lg:col-span-2 bg-[#141414] border border-[#d4af37]/15 p-2 rounded-xl overflow-hidden relative group h-[300px] lg:h-auto lg:min-h-[400px]">
+            <div class="lg:col-span-2 bg-[#141414] border border-[#d4af37]/15 p-2 rounded-xl overflow-hidden relative group h-[450px] lg:h-auto lg:min-h-[450px]">
                 <!-- Elegant overlay to match the premium dark/gold theme -->
                 <div class="absolute inset-0 bg-[#d4af37]/10 z-10 pointer-events-none group-hover:bg-transparent transition-colors duration-700"></div>
                 
