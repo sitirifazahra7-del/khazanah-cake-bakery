@@ -159,9 +159,9 @@
                     <div class="mt-auto md:mt-0">
                         <button
                             onclick="openOrderModal({{ $product->id }}, '{{ addslashes($product->name) }}', {{ $product->price }}, '{{ $product->formatted_price }}')"
-                            class="btn-gold w-full !py-2 md:!py-3.5 text-[10px] md:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 md:!px-8">
-                            <span class="hidden md:inline">✦ Pesan Sekarang</span>
-                            <span class="md:hidden">Beli</span>
+                            class="btn-gold w-full !py-2 lg:!py-3.5 text-[10px] lg:text-[11px] shadow-lg shadow-[#d4af37]/20 !px-1 lg:!px-8">
+                            <span class="hidden lg:inline">✦ Pesan Sekarang</span>
+                            <span class="lg:hidden">Beli</span>
                         </button>
                     </div>
                 </div>
