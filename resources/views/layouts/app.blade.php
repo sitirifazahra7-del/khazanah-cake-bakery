@@ -50,12 +50,7 @@
             <div class="flex flex-1 justify-end items-center gap-4">
                 <div id="navbar-auth-desktop" class="hidden md:flex items-center gap-4">
                     @guest
-                        <a href="{{ route('login') }}" class="text-[#f3e9c6] hover:text-[#d4af37] text-[13px] tracking-widest uppercase transition-colors duration-300 font-semibold">
-                            Masuk
-                        </a>
-                        <a href="{{ route('register') }}" class="btn-gold px-5 py-2 text-[11px]">
-                            <span>Daftar</span>
-                        </a>
+
                     @else
                         @if(Auth::user()->isAdmin())
                             <a href="{{ route('admin.dashboard') }}" class="btn-outline-gold px-4 py-2 text-[11px]">Admin Panel</a>
@@ -92,8 +87,7 @@
                 <div id="navbar-auth-mobile" class="flex flex-col gap-2">
                     <hr class="border-[#d4af37]/20 my-2">
                     @guest
-                        <a href="{{ route('login') }}" class="text-[#f3e9c6] hover:text-[#d4af37] text-sm tracking-widest uppercase py-2">Masuk</a>
-                        <a href="{{ route('register') }}" class="btn-gold text-xs px-5 py-3 w-full text-center mt-2">Daftar Sekarang</a>
+
                     @else
                         @if(Auth::user()->isAdmin())
                             <a href="{{ route('admin.dashboard') }}" class="btn-outline-gold text-xs px-5 py-3 w-full text-center">Admin Panel</a>
