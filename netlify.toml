@@ -1,0 +1,13 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/login"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/register"
+  to = "/"
+  status = 302
